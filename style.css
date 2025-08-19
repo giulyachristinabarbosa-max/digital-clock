@@ -1,0 +1,49 @@
+/* Aplica para todos os elementos */
+* { 
+  box-sizing: border-box; 
+}
+
+/* Configuração básica da página */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, sans-serif; /* usa a fonte padrão do sistema */
+  color: #0f172a; /* cor padrão do texto */
+}
+
+/* Centraliza tudo no meio da tela e aplica fundo em degradê */
+body {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+}
+
+/* O "cartão" que contém o relógio */
+.clock-card {
+  background: white;
+  padding: 2.5rem;                /* espaço interno */
+  border-radius: 1.25rem;         /* cantos arredondados */
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12); /* sombra suave */
+  text-align: center;             /* centraliza o texto */
+  width: min(90vw, 520px);        /* largura responsiva */
+}
+
+/* Estilo do título */
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+/* Estilo da hora (HH:MM:SS) */
+.time {
+  font-weight: 700; /* negrito */
+  font-size: clamp(2.5rem, 8vw, 4.5rem); /* tamanho responsivo */
+  line-height: 1;
+}
+
+/* Estilo da data (ex: Monday, 1 January 2025) */
+.date {
+  margin-top: 0.75rem;
+  font-size: clamp(1rem, 3vw, 1.25rem); /* tamanho responsivo */
+  color: #334155; /* cinza azulado */
+}
